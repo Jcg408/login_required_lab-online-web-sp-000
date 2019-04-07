@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
    end
 
    def destroy
-     session.delete :name
+     current_user.delete
      redirect_to '/'
    end
  end
