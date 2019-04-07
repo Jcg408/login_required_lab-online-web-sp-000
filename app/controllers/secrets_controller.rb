@@ -1,10 +1,12 @@
 class SecretsController < ApplicationController
   before_action :login_required
+
   def welcome
+
   end
 
   def show
-    if current_user
+    if session[:name]
       @secret = Secret.find(params[:id])
       redirect_to '/secrets/show'
     else
