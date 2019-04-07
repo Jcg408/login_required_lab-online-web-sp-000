@@ -1,8 +1,9 @@
 class SecretsController < ApplicationController
-  binding.pry
+
   before_action :login_required
 
   def show
+      binding.pry
     if current_user
       redirect_to '/secrets'
     else
