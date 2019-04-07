@@ -1,7 +1,7 @@
 class SecretsController < ApplicationController
 
   before_action :login_required
-binding.pry
+
   def show
 
     if current_user
@@ -13,5 +13,6 @@ binding.pry
 
   def login_required
     return head(:forbidden) unless session.include? :user_id
+    binding.pry
   end
 end
