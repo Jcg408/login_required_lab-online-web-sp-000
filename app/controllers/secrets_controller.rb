@@ -8,7 +8,7 @@ class SecretsController < ApplicationController
       @secret = Secret.find(params[:id])
       redirect_to '/secrets/show'
     else
-      redirect_to '/sessions/new'
+      redirect_to '/sessions/login'
     end
   end
 
