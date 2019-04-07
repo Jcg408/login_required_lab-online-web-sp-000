@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-root 'sessions/new'
+  root 'sessions#index'
+
   get 'secrets/show'
 
 
