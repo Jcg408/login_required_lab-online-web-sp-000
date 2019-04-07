@@ -1,6 +1,6 @@
 class SecretsController < ApplicationController
 
-  before_action :login_required
+  # before_action :login_required
 
   def show
     if current_user
