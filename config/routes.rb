@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'secrets/welcome'
+  root 'secrets#welcome'
 
   get 'secrets/show'
 
