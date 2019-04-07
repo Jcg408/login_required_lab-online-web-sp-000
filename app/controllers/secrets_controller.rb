@@ -13,6 +13,6 @@ class SecretsController < ApplicationController
 
   def login_required
     return head(:forbidden) unless session.include? :user_id
-    binding.pry
+  
   end
 end
