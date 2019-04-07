@@ -6,7 +6,7 @@ class SecretsController < ApplicationController
     if current_user
       render 'show'
     else
-      redirect_to '/sessions'
+      redirect_to '/'
     end
   end
 
