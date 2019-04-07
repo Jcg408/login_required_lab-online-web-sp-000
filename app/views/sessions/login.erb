@@ -1,2 +1,10 @@
-<h1>Log In</h1>
-<p><%= current_user %></p>
+
+<%= form_tag sessions_create_path do %>
+<label for="log in">Log In</label> <br>
+<input type="text" name="name" value="name">
+
+<input type="submit" name="login" value="login">
+<% end %>
+
+
+
