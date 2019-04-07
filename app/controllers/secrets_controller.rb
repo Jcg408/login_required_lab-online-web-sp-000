@@ -5,9 +5,9 @@ class SecretsController < ApplicationController
   def show
 
     if current_user
-      redirect_to '/secrets'
+      redirect_to '/show'
     else
-      redirect_to '/'
+      redirect_to '/sessions'
     end
   end
 
