@@ -5,7 +5,7 @@ class SecretsController < ApplicationController
     if session[:name]
       redirect_to '/secrets/show'
     else
-      redirect_to '/sessions/login'
+      redirect_to '/''
     end
   end
 
