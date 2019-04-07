@@ -4,7 +4,11 @@ class SecretsController < ApplicationController
   end
 
   def show
-    @secret = Secret.find(params[:id])
+    if current_user
+      @secret = Secret.find(params[:id])
+      redirect_to /secrets/show
+    else
+      redirect_to /sessions/new
   end
 
   def login_required
