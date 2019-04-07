@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   root 'sessions#index'
 
+  post '/login' => 'sessions#create'
+
   get 'secrets/show'
 
 
