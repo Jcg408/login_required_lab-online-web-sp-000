@@ -3,7 +3,7 @@ class SecretsController < ApplicationController
 
   def show
     if current_user
-      redirect_to '/secrets/show'
+      redirect_to '/secrets'
     else
       redirect_to '/'
     end
