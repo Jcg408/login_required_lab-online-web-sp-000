@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  root 'secrets/welcome'
 
+root 'sessions/new'
   get 'secrets/show'
 
-  get 'sessions/new'
+
 
   get 'sessions/create'
 
