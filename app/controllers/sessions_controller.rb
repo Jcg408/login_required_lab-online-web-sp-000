@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
         redirect_to '/sessions/new'
      else
        session[:name] = params[:name]
-       redirect_to '/secrets'
+       redirect_to '/'
      end
    end
 
