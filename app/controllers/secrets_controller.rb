@@ -3,7 +3,7 @@ class SecretsController < ApplicationController
   before_action :login_required
 
   def show
-    if current_user 
+    if current_user
       redirect_to '/show'
     else
       redirect_to '/sessions'
