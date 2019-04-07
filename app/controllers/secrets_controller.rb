@@ -1,6 +1,7 @@
 class SecretsController < ApplicationController
 
-  # before_action :login_required
+  before_action :login_required
+  skip_before_action :login_required, only: [:index]
 
   def show
     if current_user
