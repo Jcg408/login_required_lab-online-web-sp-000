@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
        if !params[:name] || params[:name] == ""
         redirect_to '/sessions/new'
      else
-       session[:name] = params[:name]
+      current_user
        redirect_to '/'
      end
    end
