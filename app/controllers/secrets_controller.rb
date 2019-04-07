@@ -1,6 +1,6 @@
 class SecretsController < ApplicationController
-skip_before_action :require_login, only: [:show]
 
+  # before_action :login_required
 
   def show
     if current_user
@@ -10,7 +10,7 @@ skip_before_action :require_login, only: [:show]
     end
   end
 
-  def require_login
+  def login_required
     return head(:forbidden) unless session.include? :user_id
 
   end
