@@ -1,7 +1,7 @@
 
 <%= form_tag sessions_create_path do %>
 <label for="log in">Log In</label> <br>
-<input type="text" name="name" value="name">
+<%= text_field_tag :name%>
 
-<input type="submit" name="login" value="login">
+<%= submit_tag "Login">
 <% end %>
