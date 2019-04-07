@@ -1,4 +1,5 @@
 class SecretsController < ApplicationController
+  binding.pry
   before_action :login_required
 
   def show
