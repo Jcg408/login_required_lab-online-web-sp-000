@@ -9,6 +9,7 @@ class SecretsController < ApplicationController
       redirect_to /secrets/show
     else
       redirect_to /sessions/new
+    end
   end
 
   def login_required
