@@ -3,7 +3,6 @@ class SecretsController < ApplicationController
 
   def show
     if session[:name]
-      @secret = Secret.find(params[:id])
       redirect_to '/secrets/show'
     else
       redirect_to '/sessions/login'
